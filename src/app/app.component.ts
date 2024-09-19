@@ -15,7 +15,7 @@ export class AppComponent {
   aboutme = "I like computer programming and music";
   section = "I am in D section";
 
-  // Initialize an array of Car objects
+
   cars: Car[] = [
     {
       id: 1,

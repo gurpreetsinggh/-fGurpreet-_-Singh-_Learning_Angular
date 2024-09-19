@@ -21,6 +21,5 @@ const anotherCar: Car = {
 
 };
 
-// Log the car objects to the console
 console.log('My Car:', myCar);
 console.log('Another Car:',anotherCar);
