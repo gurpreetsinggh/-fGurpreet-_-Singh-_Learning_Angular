@@ -1,0 +1,22 @@
+body {
+  font-family: Arial ;
+  background-color: bisque;
+  margin: 18px;
+}
+
+h2, h3 {
+  color: greenyellow;
+}
+
+p {
+  font-size: 12px;
+  line-height: 2;
+}
+
+div {
+  border: 1px solid ;
+  padding: 9px;
+  margin: 10px;
+  background: skyblue;
+}
+

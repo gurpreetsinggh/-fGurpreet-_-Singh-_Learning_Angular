@@ -1,15 +1,61 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { Car } from './MyData';
+
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
   title = 'Gurpreet';
-  aboutme ="I like computer programming and music";
-  section="I am in D section";
+  aboutme = "I like computer programming and music";
+  section = "I am in D section";
+
+  // Initialize an array of Car objects
+  cars: Car[] = [
+    {
+      id: 1,
+      madeBy: 'KIA',
+      model: 'Sports',
+      year: 2022,
+      color: 'Blue'
+    },
+    {
+      id: 2,
+      madeBy: 'Toyota',
+      model: 'Corolla',
+      year: 2021,
+    },
+    {
+      id: 3,
+      madeBy: 'Honda',
+      model: 'Civic',
+      year: 2020,
+      color: 'Red'
+    },
+    {
+      id: 4,
+      madeBy: 'Ford',
+      model: 'Mustang',
+      year: 2023,
+      color: 'Black'
+    },
+    {
+      id: 5,
+      madeBy: 'Chevrolet',
+      model: 'Malibu',
+      year: 2021,
+    },
+    {
+      id: 6,
+      madeBy: 'Nissan',
+      model: 'Altima',
+      year: 2022,
+      color: 'Silver'
+    },
+  ];
 }
