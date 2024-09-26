@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { Car } from './MyData';
+import { Car } from './Shared Module/MyData';
 
 
 @Component({
