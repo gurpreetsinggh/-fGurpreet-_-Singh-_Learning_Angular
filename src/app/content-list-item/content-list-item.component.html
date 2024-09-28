@@ -1,0 +1,5 @@
+<div style="border: 2px solid black; padding: 10px; margin-bottom: 10px;">
+  <h4>Car: {{ car.madeBy }} {{ car.model }}</h4>
+  <p>Manufactured Year: {{ car.year }}</p>
+  <p *ngIf="car.color">Color: {{ car.color }}</p>
+</div>
