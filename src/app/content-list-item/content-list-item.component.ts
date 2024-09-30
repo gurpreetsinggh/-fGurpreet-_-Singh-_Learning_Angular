@@ -1,6 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Car } from '../Shared Module/MyData';
+import {CarDetails} from "../Shared Module/carDetails";
 
 @Component({
   selector: 'app-content-list-item',
@@ -10,5 +11,5 @@ import { Car } from '../Shared Module/MyData';
   styleUrls: ['./content-list-item.component.css']
 })
 export class ContentListItemComponent {
-  @Input() car!: Car;
+  @Input() vehicle?: CarDetails;
 }

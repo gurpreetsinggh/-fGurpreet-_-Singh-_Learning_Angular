@@ -1,5 +1,7 @@
-<div style="border: 2px solid black; padding: 10px; margin-bottom: 10px;">
-  <h4>Car: {{ car.madeBy }} {{ car.model }}</h4>
-  <p>Manufactured Year: {{ car.year }}</p>
-  <p *ngIf="car.color">Color: {{ car.color }}</p>
+<div *ngIf="vehicle" class="vehicle-detail">
+  <h4>Car: {{ vehicle.car.model}} by {{vehicle.car.madeBy}} </h4>
+  <div *ngIf = "vehicle.secondHand">
+    <h4>Car is Second Hand</h4>
+  </div>
+  <h4>The color of the car is {{vehicle.car.color}}</h4>
 </div>

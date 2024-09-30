@@ -5,7 +5,7 @@ export interface Car {
   year: number;                // Year the car was manufactured
   color?: string;              // Color of Car            --- Optional
 }
-const myCar: Car = {
+let myCar: Car = {
   id: 1,
   madeBy: 'KIA',
   model: 'Sports',
@@ -13,7 +13,7 @@ const myCar: Car = {
   color: 'Blue',
 };
 
-const anotherCar: Car = {
+let anotherCar: Car = {
   id: 2,
   madeBy: 'Toyota',
   model: 'Corolla',

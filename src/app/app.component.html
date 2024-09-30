@@ -1,18 +1,1 @@
-<html>
-<head>
-  <title>{{ title }}</title>
-</head>
-<body>
-<h2>{{ title }}</h2>
-<p>I am from Punjab</p>
-<p>{{ aboutme }}</p>
-<p>{{ section }}</p>
-
-<h3>My Cars:</h3>
-<div *ngFor="let car of cars">
-  <h4>Car: {{ car.madeBy }} {{ car.model }}</h4>
-  <p>Manufactured Year: {{ car.year }}</p>
-  <p *ngIf="car.color">Color: {{ car.color }}</p>
-</div>
-</body>
-</html>
+<app-content-list></app-content-list>

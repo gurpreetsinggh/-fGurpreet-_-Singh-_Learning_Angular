@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { Car } from './Shared Module/MyData';
+import {ContentListComponent} from "./content-list/content-list.component";
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, ContentListComponent],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })

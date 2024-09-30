@@ -1,7 +1,10 @@
-.even-item {
-  background-color: pink;
+
+
+.odd {
+  background-color: teal;
 }
 
-.odd-item {
-  background-color: teal;
+
+.even {
+  background-color: pink;
 }
