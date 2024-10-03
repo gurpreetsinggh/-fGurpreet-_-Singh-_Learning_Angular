@@ -2,12 +2,15 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { Car } from './Shared Module/MyData';
 import {ContentListComponent} from "./content-list/content-list.component";
+import {ContentListItemComponent} from "./content-list-item/content-list-item.component";
+import {CarDetails} from "./Shared Module/carDetails";
+import {CarServiceService} from "./services/car-service.service";
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, ContentListComponent],
+  imports: [RouterOutlet, ContentListComponent, ContentListItemComponent],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
@@ -59,4 +62,17 @@ export class AppComponent {
       color: 'Silver'
     },
   ];
+  superCar: CarDetails | undefined;
+
+  constructor(private carService: CarServiceService) {
+
+  }
+
+  ngOnInit() {
+    this.carService.getcarById(1).subscribe({
+      next: data => this.superCar = data,
+      error: err => console.error("Error fetching Super Car", err),
+      complete: () => console.log("Super Car data fetch complete!")
+  })
+  }
 }

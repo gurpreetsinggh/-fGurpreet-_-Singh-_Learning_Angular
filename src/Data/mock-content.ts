@@ -4,9 +4,9 @@ import {CarDetails} from "../app/Shared Module/carDetails";
 
 let cars: Car[] = [
   { id: 1, madeBy: 'KIA', model: 'Sports', year: 2022, color: 'Blue' },
-  { id: 2, madeBy: 'Toyota', model: 'Corolla', year: 2021 },
+  { id: 2, madeBy: 'Toyota', model: 'Corolla', year: 2021 ,color: 'Yellow'},
   { id: 3, madeBy: 'Honda', model: 'Civic', year: 2020, color: 'Black' },
-  { id: 4, madeBy: 'Ford', model: 'Focus', year: 2019 },
+  { id: 4, madeBy: 'Ford', model: 'Focus', year: 2019 ,color: 'White'}
 ];
 
 export let carDetails: CarDetails[] = [
