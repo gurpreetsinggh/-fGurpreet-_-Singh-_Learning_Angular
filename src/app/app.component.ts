@@ -5,12 +5,13 @@ import {ContentListComponent} from "./content-list/content-list.component";
 import {ContentListItemComponent} from "./content-list-item/content-list-item.component";
 import {CarDetails} from "./Shared Module/carDetails";
 import {CarServiceService} from "./services/car-service.service";
+import {NgStyle} from "@angular/common";
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, ContentListComponent, ContentListItemComponent],
+  imports: [RouterOutlet, ContentListComponent, ContentListItemComponent, NgStyle],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
@@ -63,6 +64,7 @@ export class AppComponent {
     },
   ];
   superCar: CarDetails | undefined;
+
 
   constructor(private carService: CarServiceService) {
 
