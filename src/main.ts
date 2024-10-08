@@ -11,7 +11,7 @@ import {PageNotFoundComponent} from "./app/page-not-found/page-not-found.compone
 const routes: Routes =[{path:'', redirectTo: '/cars', pathMatch: 'full'}, //default route
   { path: 'cars', component: ContentListComponent },
   { path: 'students/:id', component: ContentListItemComponent },
-  {path:'modify-student', component: ModifyListItemComponent},
+  {path:'modify-car', component: ModifyListItemComponent},
   {path: '**', component:PageNotFoundComponent}];
 
 bootstrapApplication(AppComponent,{

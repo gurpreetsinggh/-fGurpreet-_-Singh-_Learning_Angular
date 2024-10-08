@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import {RouterLink, RouterLinkActive, RouterOutlet} from '@angular/router';
 import { Car } from './Shared Module/MyData';
 import {ContentListComponent} from "./content-list/content-list.component";
 import {ContentListItemComponent} from "./content-list-item/content-list-item.component";
@@ -11,7 +11,7 @@ import {NgStyle} from "@angular/common";
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, ContentListComponent, ContentListItemComponent, NgStyle],
+  imports: [RouterOutlet, ContentListComponent, ContentListItemComponent, NgStyle, RouterLink, RouterLinkActive],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
