@@ -1,7 +1,10 @@
 <div *ngIf="vehicle" class="vehicle-detail">
+  <img class="image" src="images/{{vehicle.car.color}}.png">
   <h4>Car: {{ vehicle.car.model}} by {{vehicle.car.madeBy}} </h4>
   <div *ngIf = "vehicle.secondHand">
     <h4>Car is Second Hand</h4>
   </div>
   <h4>The color of the car is {{vehicle.car.color}}</h4>
+
+
 </div>

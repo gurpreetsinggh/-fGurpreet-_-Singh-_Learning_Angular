@@ -1,3 +1,10 @@
 .vehicle-detail{
   border: 2px solid;
 }
+
+.image{
+  height: 100px;
+  align-items: center;
+  display: block;
+  margin: 0 auto;
+}
